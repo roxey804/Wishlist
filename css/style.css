@@ -1,185 +1,215 @@
 /* Portrait and Landscape */
-@media (max-width: 575.98px)
-{ h1,h1{font-size: 40px;}
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 42px;
+  }
+
   p {
-    font-size: 34px;
-  } }
-
-
+    font-size: 36px;
+  }
+}
 
 /* FONTS */
- h2 {
+h2 {
   color: navy;
   font-family: 'Poiret One', cursive;
   font-weight: bold;
 }
 
 /* Colour-change */
-h1 { -webkit-animation:colorchange 10s infinite alternate;font-weight: bold;}
+h1 {
+  -webkit-animation: colorchange 10s infinite alternate;
+  font-weight: bold;
+}
 
 @-webkit-keyframes colorchange {
-     0% {
+  0% {
+    color: blue;
+  }
 
-       color: blue;
-     }
+  10% {
+    color: #8e44ad;
+  }
 
-     10% {
+  20% {
+    color: #1abc9c;
+  }
 
-       color: #8e44ad;
-     }
+  30% {
+    color: #d35400;
+  }
 
-     20% {
+  40% {
+    color: blue;
+  }
 
-       color: #1abc9c;
-     }
+  50% {
+    color: #34495e;
+  }
 
-     30% {
+  60% {
+    color: blue;
+  }
 
-       color: #d35400;
-     }
+  70% {
+    color: #2980b9;
+  }
 
-     40% {
+  80% {
+    color: #f1c40f;
+  }
 
-       color: blue;
-     }
+  90% {
+    color: #2980b9;
+  }
 
-     50% {
-
-       color: #34495e;
-     }
-
-     60% {
-
-       color: blue;
-     }
-
-     70% {
-
-       color: #2980b9;
-     }
-     80% {
-
-       color: #f1c40f;
-     }
-
-     90% {
-
-       color: #2980b9;
-     }
-
-     100% {
-
-       color: pink;
-     }
-   }
+  100% {
+    color: pink;
+  }
+}
 
 .label {
-
   background-color: red;
   display: inline-block;
-  -webkit-animation-name: colorchangesquare; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-name: colorchangesquare;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
   animation-name: colorchangesquare;
   animation-duration: 4s;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes colorchangesquare {
-  from {background-color: red;}
-  to {background-color: yellow;}
+  from {
+    background-color: red;
+  }
+
+  to {
+    background-color: yellow;
+  }
 }
 
 /* Standard syntax */
 @keyframes colorchangesquare {
-  from {background-color: red;}
-  to {background-color: yellow;}
+  from {
+    background-color: red;
+  }
+
+  to {
+    background-color: yellow;
+  }
 }
 
-blockquote {color: navy;
-font-family: 'Poiret One', cursive; font-size: 20px; font-style: italic;}
+blockquote {
+  color: navy;
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  font-style: italic;
+}
+
 body {
-  background: url("../images/backgrd.jpg") no-repeat  center fixed;
+  background: url("../images/backgrd.jpg") no-repeat center fixed;
   color: navy;
   font-family: 'Poiret One', cursive;
   font-size: 28px;
-
 }
+
 /* Snow effect */
 .snow {
-    background-color: transparent;
-    background-image: url(http://wp.agens.no/smakebit/wp-content/themes/smakebiten/img/snow1.png), url(http://wp.agens.no/smakebit/wp-content/themes/smakebiten/img/snow2.png);
-    -webkit-animation: snow 20s linear infinite;
-    -moz-animation: snow 20s linear infinite;
-    -ms-animation: snow 20s linear infinite;
-    animation: snow 20s linear infinite;
-	z-index: 999;
-	right: 0;
+  background-color: transparent;
+  background-image: url(http://wp.agens.no/smakebit/wp-content/themes/smakebiten/img/snow1.png), url(http://wp.agens.no/smakebit/wp-content/themes/smakebiten/img/snow2.png);
+  -webkit-animation: snow 20s linear infinite;
+  -moz-animation: snow 20s linear infinite;
+  -ms-animation: snow 20s linear infinite;
+  animation: snow 20s linear infinite;
+  z-index: 999;
+  right: 0;
   top: 0;
   left: 0;
   bottom: 0;
-	margin-top: 0;
-	position: absolute;
+  margin-top: 0;
+  position: absolute;
   text-align: center;
   background-color: red;
 }
 
 /*Keyframes*/
-
 @keyframes snow {
-    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px
+  }
 
-    100% { background-position: 500px 1000px, 400px 400px, 300px 300px }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px
+  }
 }
 
 @-moz-keyframes snow {
-    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px
+  }
 
-    100% { background-position: 500px 1000px, 400px 400px, 300px 300px }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px
+  }
 }
 
 @-webkit-keyframes snow {
-    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px
+  }
 
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-    }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
 }
 
 @-ms-keyframes snow {
-    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px
+  }
 
-    100% { background-position: 500px 1000px, 400px 400px, 300px 300px }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px
+  }
 }
+
 /* End snow */
-
-nav {position: fixed;
+nav {
+  position: fixed;
   top: 0;
-   width: 100%;  display: block;
-   background-color: red;
-   overflow: hidden;
-   z-index: 100;
+  width: 100%;
+  display: block;
+  background-color: red;
+  overflow: hidden;
+  z-index: 100;
   text-align: center;
-   /* This allows the navbar to float on TOP */
- }
+  /* This allows the navbar to float on TOP */
+}
 
-#desc {margin-top: 10rem;}
+#desc {
+  margin-top: 10rem;
+}
 
 section img {
-  float:left;
+  float: left;
   max-width: 100%;
   height: 25rem;
   margin-left: 1rem;
 }
+
 #gloves img {
   max-width: 80%;
   height: 25rem;
   border-color: blue;
-  }
+}
 
-.main {margin-top: 200px;}
+.main {
+  margin-top: 200px;
+}
 
 footer {
-
   background-color: navy;
   color: white;
   text-align: center;
