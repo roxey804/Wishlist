@@ -5,7 +5,6 @@
   }
 
 } */
-
 /* FONTS */
 h2 {
   color: navy;
@@ -20,14 +19,15 @@ blockquote {
   font-size: 24px;
   font-style: italic;
 }
-p {font-size: 30px;}
 
+p {
+  font-size: 30px;
+}
 
-/* Colour-change */
+/* Font Colour-change */
 h1 {
   -webkit-animation: colorchange 10s infinite alternate;
   font-weight: bold;
-
 }
 
 @-webkit-keyframes colorchange {
@@ -109,15 +109,12 @@ h1 {
   }
 }
 
-
-
 body {
-font-weight: bold;
+  font-weight: bold;
   color: navy;
   font-family: 'Poiret One', cursive;
   background: url("../images/backgrd.jpg") no-repeat center fixed;
 }
-
 
 /* End snow */
 nav {
@@ -131,36 +128,36 @@ nav {
   text-align: center;
   /* This allows the navbar to float on TOP */
 }
-
+/* margin for the item description */
 #desc {
   margin-top: 10rem;
 }
-
-
-section img {
-  float: left;
-  max-width: 100%;
-  width:65%;
-  height: 20rem;
-  margin-left: 1rem;
-
-}
-
-section img:hover {opacity: 0.5;}
-
-/* Stop the top part touching the nav bar */
-.main {
+/* Formatting of the main section  */
+main {
   margin-top: 100px;
   z-index: 10;
 }
 
+main img {
+  float: left;
+  max-width: 100%;
+  width: 65%;
+  height: 20rem;
+  margin-left: 1rem;
+}
+
+main img:hover {
+  opacity: 0.5;
+}
+
+/* Footer */
 footer {
   background-color: navy;
   color: white;
   text-align: center;
 }
 
-/* Snow effect */
+/* --------------------------Snow effect----------------------------------- */
 .snow {
   background-color: transparent;
   background-image: url(http://wp.agens.no/smakebit/wp-content/themes/smakebiten/img/snow1.png), url(http://wp.agens.no/smakebit/wp-content/themes/smakebiten/img/snow2.png);
